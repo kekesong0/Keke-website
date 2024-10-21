@@ -1,0 +1,175 @@
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 30px;
+    position: relative; /* 相对定位 */
+    margin-left: -10px;
+}
+
+.profile-pic {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid white; /* 边框 */
+}
+
+.bio-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.bio-info h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 8px;
+}
+.bio-info h2 {
+    color: white;
+    font-size: 15px;
+    margin: 0 10px 8px;
+}
+.bio-info p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0 10px 8px;
+}
+
+nav {
+    margin-left: auto; /* Align nav to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    background-color: transparent; /* Remove background from the whole nav */
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding to make it button-like */
+    background-color: #0056b3; /* Button background color */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid transparent; /* Initial border (invisible) */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover and focus effects */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #424e59; /* Darker color on hover */
+    border-color: white; /* Add white border on hover */
+}
+
+/* Section styling */
+.bio {
+    margin: 40px 0; 
+    padding: 20px; 
+    background-color: #f9f9f9;
+}
+
+.bio h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+.bio p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.skills-section {
+    padding: 20px;
+}
+
+.skills-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+/* Skills section styling */
+.skills {
+    max-width: 700px;
+    margin: 70px 10px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+    text-align: center;
+}
+
+/* Padding to ensure distance from bottom */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 40px; /* Add extra padding at the bottom */
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    margin-bottom: 30px; /* Add margin to ensure no overlap with bottom */
+}
+
+.skill-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Links */
+.external-link {
+    display: block;
+    margin-top: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.external-link:hover,
+.external-link:focus {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
